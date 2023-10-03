@@ -1,3 +1,9 @@
+//
+//  ButtonView.swift
+//  Kalkulator
+//
+//  Created by student on 03/10/2023.
+//
 
 import SwiftUI
 
@@ -17,7 +23,7 @@ struct ButtonView: View {
             }
             firstVal.toggle()
         }
-            .frame(width: 100, height: 60)
+            .frame(width: 130, height: 60)
             .border(.blue, width: 4)
             .font(.largeTitle)
     }
