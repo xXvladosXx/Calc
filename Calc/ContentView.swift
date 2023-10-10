@@ -155,7 +155,7 @@ struct ContentView: View {
                     break;
                     
                 case "sin":
-                    score = String(Calculations().customSin(angleInRadians: Double(val1)))
+                    score = String(Calculations().Sin(of: val1))
                     break;
                 
                 default:

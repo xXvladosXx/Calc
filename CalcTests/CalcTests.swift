@@ -50,7 +50,7 @@ final class CalcTests: XCTestCase {
     }
     
     func testPositiveScenarioForSinCalculation(){
-        XCTAssertEqual(Calculations().customSin(angleInRadians: 90), 1)
+        XCTAssertEqual(Calculations().Sin(of: 90), 1)
     }
     
     override func setUpWithError() throws {

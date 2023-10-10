@@ -26,8 +26,8 @@ struct Calculations{
         return Double(firstVal + SecondVal);
     }
     
-    func customSin(angleInRadians: Double) -> Double {
-        let sinValue = sin(angleInRadians)
+    func Sin(of firstVal: Int) -> Double {
+        let sinValue = sin(Double(firstVal))
         
         if sinValue > 0 {
             return 1.0
