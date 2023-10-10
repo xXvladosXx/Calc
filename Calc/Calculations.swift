@@ -2,7 +2,7 @@
 import Foundation
 
 
-struct Calculation{
+struct Calculations{
     
     
     func substactTwoNumbers(of firstVal:Int, with SecondVal:Int) -> Double{
@@ -13,21 +13,28 @@ struct Calculation{
         return Double(firstVal * SecondVal);
     }
     
-    func divisionTwoNumbers(of firstVal:Int, with SecondVal:Int) -> Double{
-        if(SecondVal == 0)
-        {
-            print("Cant divide by 0");
-            return 0;
+    func divisionTwoNumbers(of numerator: Int, with denominator: Int) -> Double? {
+        if denominator == 0 {
+            print("Error: Division by zero")
+            return nil
         }
-            
-        return Double(firstVal / SecondVal);
+        return Double(numerator / denominator)
     }
+
     
     func addTwoNumbers(of firstVal:Int, with SecondVal:Int) -> Double{
         return Double(firstVal + SecondVal);
     }
     
-    func sinOfumber(of firstVal:Int) -> Double{
-        return 0;
+    func customSin(angleInRadians: Double) -> Double {
+        let sinValue = sin(angleInRadians)
+        
+        if sinValue > 0 {
+            return 1.0
+        } else if sinValue < 0 {
+            return -1.0
+        } else {
+            return 0.0
+        }
     }
 }
