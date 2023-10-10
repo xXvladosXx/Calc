@@ -15,7 +15,7 @@ struct Calculations{
     
     func divisionTwoNumbers(of numerator: Int, with denominator: Int) -> Double? {
         if denominator == 0 {
-            print("Error: Division by zero")
+            print("Division by zero")
             return nil
         }
         return Double(numerator / denominator)

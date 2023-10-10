@@ -148,7 +148,7 @@ struct ContentView: View {
                     let corScore = String(Calculations().divisionTwoNumbers(of: val1, with: val2) ?? 0)
                     if(corScore == "0")
                     {
-                        score = "NaN"
+                        score = "0"
                     }else{
                         score = corScore
                     }
