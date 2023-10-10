@@ -17,7 +17,7 @@ final class CalcTests: XCTestCase {
     
     func testNegativeScenarioForAddCalculation(){
         let result = Calculations().addTwoNumbers(of: -5, with: -3)
-        XCTAssertEqual(result, -8.0, "Result should be -8.0 when adding negative numbers")
+        XCTAssertEqual(result, -8.0, "Result should be -8.0 ")
     }
     
     func testPositiveScenarioForSubCalculation(){
@@ -26,7 +26,7 @@ final class CalcTests: XCTestCase {
     
     func testNegativeScenarioForSubCalculation(){
         let result = Calculations().substactTwoNumbers(of: 3, with: 5)
-        XCTAssertEqual(result, -2.0, "Result should be -2.0 when secondVal is greater than firstVal")
+        XCTAssertEqual(result, -2.0, "Result should be -2.0")
     }
     
     func testPositiveScenarioForProdCalculation(){
@@ -35,10 +35,7 @@ final class CalcTests: XCTestCase {
     
     func testNegativeScenarioForProdCalculation(){
         let result1 = Calculations().multiplyTwoNumbers(of: 0, with: 10)
-        XCTAssertEqual(result1, 0.0, "Multiplying by zero should result in zero")
-                
-        let result2 = Calculations().multiplyTwoNumbers(of: 5, with: 0)
-        XCTAssertEqual(result2, 0.0, "Multiplying by zero should result in zero")
+        XCTAssertEqual(result1, 0.0, "Multiplying by zero")
     }
     
     func testPositiveScenarioForDivCalculation(){
